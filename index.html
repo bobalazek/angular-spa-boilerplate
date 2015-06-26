@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html id="html" class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Angular / SPA Boilerplate</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="cleartype" content="on" />
+		<meta name="author" content="Borut Balazek" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="480" />
+		<!-- Stylesheets -->
+		<link id="animate-css" rel="stylesheet" href="assets/vendor/animate.css/animate.min.css" />
+		<link id="font-awesome-css" rel="stylesheet" href="assets/vendor/fontawesome/css/font-awesome.min.css" />
+		<link id="bootstrap-css" rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" />
+		<link id="helpers-css" rel="stylesheet" href="assets/stylesheets/helpers.css" />
+		<link id="application-css" rel="stylesheet" href="assets/stylesheets/application.css?version=0.1" />
+		<!-- Stylesheets /END -->
+		<!-- Head Javascripts -->
+		<script id="config-js">
+			var baseUrl = '';
+		</script>
+		<script id="modernizr-js" type="text/javascript" src="assets/vendor/modernizr/modernizr.js"></script>
+		<script id="detectizr-js" type="text/javascript" src="assets/vendor/detectizr/dist/detectizr.js"></script>
+		<script id="respond-js" type="text/javascript" src="assets/vendor/respond/dest/respond.min.js"></script>
+		<!-- Angular Stuff -->
+		<script id="angular-js" type="text/javascript" src="assets/vendor/angular/angular.min.js"></script>
+		<script id="angular-animate-js" type="text/javascript" src="assets/vendor/angular-animate/angular-animate.min.js"></script>
+		<script id="angular-cookies-js" type="text/javascript" src="assets/vendor/angular-cookies/angular-cookies.min.js"></script>
+		<script id="angular-ui-router-js" type="text/javascript" src="assets/vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script id="angular-ui-bootstrap-js" type="text/javascript" src="assets/vendor/angular-bootstrap/ui-bootstrap.min.js"></script>
+		<script id="angular-ui-bootstrap-tpls-js" type="text/javascript" src="assets/vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+		<script id="app-bootstrap-js" type="text/javascript" src="assets/app/bootstrap.js"></script>
+		<script id="app-home-module-script-js" type="text/javascript" src="assets/app/modules/home/home.js"></script>
+		<!-- Angular Stuff /END -->
+		<!-- Head Javascripts /END -->
+	</head>
+	<body id="body">
+		<div id="application" role="application"
+			ng-app="application"
+			ng-controller="ApplicationController as applicationScope">
+			<div id="preloader">
+				Application is loading ...
+			</div>
+			<div id="wrapper">
+				<header id="header" role="banner">
+					<nav id="primary-navigation"
+						class="navigation navbar navbar-default navbar-static-top"
+						role="navigation">
+						<div class="container">
+							<div class="navbar-header">
+								<button type="button"
+									class="navbar-toggle collapsed"
+									data-toggle="collapse"
+									data-target="#primary-navigation-collapse">
+    								<span class="sr-only">Toggle navigation</span>
+    								<span class="icon-bar"></span>
+    								<span class="icon-bar"></span>
+    								<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="">
+									<div class="inline-block">
+										Angular / SPA Boilerplate
+									</div>
+								</a>
+							</div>
+							<div id="primary-navigation-collapse"
+								class="collapse navbar-collapse">
+								<ul id="primary-navigation-list"
+									class="navigation-list nav navbar-nav">
+									<li class="active">
+										<a href="">Home</a>
+									</li>
+								</ul> <!-- /#primary-navigation-list -->
+							</div> <!-- /#primary-navigation-collapse -->
+						</div> <!-- /.container -->
+					</nav> <!-- /#primary-navigation -->
+				</header> <!-- /#header -->
+				<div id="content" ui-view></div> <!-- /#content -->
+				<footer id="footer" role="contentinfo">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<div id="copyright">
+									Copyright &copy; 2015 -
+									Made with <i class="fa fa-fw fa-heart heartbeat-animation" style="color: #FE0E39;"></i>
+									in EU
+									by
+									<a href="https://twitter.com/bobalazek" target="_blank">Borut Balažek</a>
+								</div> <!-- /#copyright -->
+							</div>
+							<!-- /.col-md-6 -->
+							<div class="col-md-6">
+								<div class="pull-right">
+									<nav id="tertiary-navigation" class="navigation" role="navigation">
+										<ul id="tertiary-navigation-list" class="navigation-list list-inline">
+											<li>
+												<a href="">Home</a>
+											</li>
+										</ul> <!-- /#tertiary-navigation-list -->
+									</nav> <!-- /#tertiary-navigation -->
+								</div> <!-- /.pull-right -->
+							</div> <!-- /.col-md-6 -->
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</footer> <!-- /#footer -->
+			</div> <!-- /#wrapper -->
+		</div> <!-- /#application -->
+		<!-- Body Javascripts -->
+		<script id="jquery-js" type="text/javascript" src="assets/vendor/jquery/dist/jquery.min.js"></script>
+		<script id="jquery-migrate-js" type="text/javascript" src="assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+		<script id="jquery-noconflict-js" type="text/javascript">
+			jQuery.noConflict();
+		</script>
+		<script id="bootstrap-js" type="text/javascript" src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script id="helpers-js" type="text/javascript" src="assets/javascripts/helpers.js"></script>
+		<script id="application-js" type="text/javascript" src="assets/javascripts/application.js?version=0.1"></script>
+		<script id="application-initialize-js">
+			Application.initialize();
+		</script>
+		<!-- Body Javascripts /END -->
+	</body>
+</html>
