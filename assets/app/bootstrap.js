@@ -2,14 +2,10 @@ angular
     .module(
         'application',
         [
-            'ngAnimate',
-            'ngCookies',
-            'ui.router',
-            'ui.bootstrap',
             'application.home',
         ]
     )
-    .config( function($urlRouterProvider, $stateProvider) {
+    .config( function($urlRouterProvider) {
         // Routes
         $urlRouterProvider.otherwise('/');
     })
