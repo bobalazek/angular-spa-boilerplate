@@ -30,6 +30,10 @@
 		<script id="angular-ui-router-js" type="text/javascript" src="assets/vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
 		<script id="angular-ui-bootstrap-js" type="text/javascript" src="assets/vendor/angular-bootstrap/ui-bootstrap.min.js"></script>
 		<script id="angular-ui-bootstrap-tpls-js" type="text/javascript" src="assets/vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+		<script id="angular-translate-js" type="text/javascript" src="assets/vendor/angular-translate/angular-translate.min.js"></script>
+		<script id="angular-translate-loader-static-files-js" type="text/javascript" src="assets/vendor/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+
 		<script id="app-bootstrap-js" type="text/javascript" src="assets/app/bootstrap.js"></script>
 		<script id="app-home-module-script-js" type="text/javascript" src="assets/app/modules/home/home.js"></script>
 		<!-- Angular Stuff /END -->
@@ -43,66 +47,10 @@
 				Application is loading ...
 			</div>
 			<div id="wrapper">
-				<header id="header" role="banner">
-					<nav id="primary-navigation"
-						class="navigation navbar navbar-default navbar-static-top"
-						role="navigation">
-						<div class="container">
-							<div class="navbar-header">
-								<button type="button"
-									class="navbar-toggle collapsed"
-									data-toggle="collapse"
-									data-target="#primary-navigation-collapse">
-    								<span class="sr-only">Toggle navigation</span>
-    								<span class="icon-bar"></span>
-    								<span class="icon-bar"></span>
-    								<span class="icon-bar"></span>
-								</button>
-								<a class="navbar-brand" href="">
-									<div class="inline-block">
-										Angular / SPA Boilerplate
-									</div>
-								</a>
-							</div>
-							<div id="primary-navigation-collapse"
-								class="collapse navbar-collapse">
-								<ul id="primary-navigation-list"
-									class="navigation-list nav navbar-nav">
-									<li class="active">
-										<a href="">Home</a>
-									</li>
-								</ul> <!-- /#primary-navigation-list -->
-							</div> <!-- /#primary-navigation-collapse -->
-						</div> <!-- /.container -->
-					</nav> <!-- /#primary-navigation -->
+				<header id="header" role="banner" ng-include="'assets/app/layout/header.html'">
 				</header> <!-- /#header -->
 				<div id="content" ui-view></div> <!-- /#content -->
-				<footer id="footer" role="contentinfo">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<div id="copyright">
-									Copyright &copy; 2015 -
-									Made with <i class="fa fa-fw fa-heart heartbeat-animation" style="color: #FE0E39;"></i>
-									in EU
-									by
-									<a href="https://twitter.com/bobalazek" target="_blank">Borut Balažek</a>
-								</div> <!-- /#copyright -->
-							</div>
-							<!-- /.col-md-6 -->
-							<div class="col-md-6">
-								<div class="pull-right">
-									<nav id="tertiary-navigation" class="navigation" role="navigation">
-										<ul id="tertiary-navigation-list" class="navigation-list list-inline">
-											<li>
-												<a href="">Home</a>
-											</li>
-										</ul> <!-- /#tertiary-navigation-list -->
-									</nav> <!-- /#tertiary-navigation -->
-								</div> <!-- /.pull-right -->
-							</div> <!-- /.col-md-6 -->
-						</div> <!-- /.row -->
-					</div> <!-- /.container -->
+				<footer id="footer" role="contentinfo" ng-include="'assets/app/layout/footer.html'">
 				</footer> <!-- /#footer -->
 			</div> <!-- /#wrapper -->
 		</div> <!-- /#application -->

@@ -17,7 +17,9 @@
         "jquery": "~2.1",
         "jquery-migrate": "~1.2",
         "modernizr": "~2.8",
-        "respond": "~1.4"
+        "respond": "~1.4",
+        "angular-translate": "~2.7",
+        "angular-translate-loader-static-files": "~2.7"
     },
     "resolutions": {
         "angular": "~1.3",

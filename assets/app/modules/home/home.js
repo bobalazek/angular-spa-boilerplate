@@ -18,6 +18,8 @@ angular
         'HomeController',
         function HomeController($rootScope, $scope) {
             var vm = this;
+
+            return vm;
         }
     )
 ;

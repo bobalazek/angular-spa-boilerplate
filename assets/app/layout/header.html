@@ -1,0 +1,44 @@
+<nav id="primary-navigation"
+    class="navigation navbar navbar-default navbar-static-top"
+    role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#primary-navigation-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="">
+                <div class="inline-block">
+                    Angular / SPA Boilerplate
+                </div>
+            </a>
+        </div>
+        <div id="primary-navigation-collapse"
+            class="collapse navbar-collapse">
+            <ul id="primary-navigation-list"
+                class="navigation-list nav navbar-nav">
+                <li class="active">
+                    <a href="">Home</a>
+                </li>
+            </ul> <!-- /#primary-navigation-list -->
+            <ul id="languages-navigation-list"
+                class="nav navbar-nav navbar-right">
+                <li ng-class="{ 'active' : applicationScope.currentLanguage == 'en' }">
+                    <a href="#"
+                        ng-click="applicationScope.changeLanguage('en')"
+                        translate="layout.languagesMenu.en"></a>
+                </li>
+                <li ng-class="{ 'active' : applicationScope.currentLanguage == 'de' }">
+                    <a href="#"
+                        ng-click="applicationScope.changeLanguage('de')"
+                        translate="layout.languagesMenu.de"></a>
+                </li>
+            </ul> <!-- /#languages-navigation-list -->
+        </div> <!-- /#primary-navigation-collapse -->
+    </div> <!-- /.container -->
+</nav> <!-- /#primary-navigation -->
