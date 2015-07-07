@@ -13,7 +13,7 @@ angular
         // Translations
         $translateProvider.useStaticFilesLoader({
             prefix: 'assets/app/languages/',
-            suffix: '.json'
+            suffix: '.json',
         });
         $translateProvider.useSanitizeValueStrategy('escaped');
         $translateProvider.preferredLanguage('en');
