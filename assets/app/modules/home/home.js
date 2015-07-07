@@ -10,7 +10,7 @@ angular
         $stateProvider
             .state('home', {
                 url : '/',
-                templateUrl : 'assets/app/modules/home/home.tpl.html'
+                templateUrl : 'assets/app/modules/home/home.tpl.html',
             })
         ;
     })
